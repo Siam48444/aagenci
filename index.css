@@ -45,6 +45,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: clamp(2em, 5vw, 4vw) clamp(3em, 8vw, 9vw);
+    user-select: none;
     
 }
 
