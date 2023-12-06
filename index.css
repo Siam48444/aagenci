@@ -2,6 +2,7 @@
     margin: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    font-family: var(--Inter);
 }
 
 body, html {
@@ -29,4 +30,38 @@ body, html {
     
     /* Font Families */
     --Inter: 'Inter', sans-serif;
+}
+
+main {
+    display: block;
+    height: 100vh;
+    height: 100svh;
+    background-color: var(--Black);
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(2em, 5vw, 4vw) clamp(3em, 8vw, 9vw);
+    
+}
+
+.right_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: clamp(1em, 4vw, 3vw);
+
+    & a {
+        text-decoration: none;
+        color: var(--White);
+        font-weight: 400;
+        font-size: clamp(0.7rem, 2.5vw, 0.95rem);
+    }
+}
+
+.logo_image {
+    width: clamp(5em, 10vw, 8vw);
 }
