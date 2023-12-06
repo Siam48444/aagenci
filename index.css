@@ -23,6 +23,7 @@ body, html {
 :root {
     /* Colors */
     --Black: rgba(0, 0, 0, 1);
+    --Black_Light: rgba(35, 35, 35, 1);
     --White: rgba(255, 255, 255, 1);
     --Green: rgba(215, 235, 110, 1);
     
