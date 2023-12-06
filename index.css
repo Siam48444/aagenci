@@ -66,3 +66,47 @@ nav {
 .logo_image {
     width: clamp(5em, 10vw, 8vw);
 }
+
+.heading_area {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    height: 100%;
+    gap: clamp(2em, 3vw, 4vw);
+    padding: clamp(3em, 7vw, 6vw) clamp(2em, 5vw, 4vw);
+    color: var(--White);
+
+    & h6 {
+        font-weight: 400;
+        opacity: 0.8;
+        font-size: clamp(0.7rem, 2vw, 0.95rem);
+        letter-spacing: 2.5px;
+    }
+
+    & h1 {
+        opacity: 0.8;
+        font-weight: 700;
+        font-size: clamp(2rem, 9vw, 9vw);
+        line-height: 100%;
+    }
+    
+    & span {
+        color: var(--Green);
+        opacity: 0.9;
+    }
+
+    & p {
+        font-weight: 300;
+        opacity: 0.8;
+        font-size: clamp(0.7rem, 3.5vw, 0.95rem);
+        line-height: 150%;
+        width: 50%;
+    }
+}
+
+.text_containers {
+    height: max-content;
+    width: max-content;
+    overflow: hidden;
+}
