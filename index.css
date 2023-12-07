@@ -253,19 +253,43 @@ nav {
 
 .page2_bottom {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: baseline;
+    justify-content: space-around;
     height: max-content;
-    gap: 5em;
+    gap: clamp(5em, 25vw, 30vw);
     color: var(--White);
 
     & > p {
         font-weight: 300;
         font-size: clamp(0.8rem, 3vw, 1rem);
-        width: 20%;
     }
 }
 
+.creative_design_section {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 2em;
+
+    & p {
+        font-weight: 400;
+        font-size: clamp(0.75rem, 2vw, 0.95rem);
+        letter-spacing: 2.5px;
+        line-height: 120%;
+    }
+
+    & h1 {
+        font-weight: 600;
+        font-size: clamp(2.5rem, 5vw, 5vw);
+        line-height: 100%;
+    }
+
+    & h6 {
+        font-weight: 300;
+        font-size: clamp(0.75rem, 2vw, 0.95rem);
+    }
+}
 
 
 
