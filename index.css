@@ -107,13 +107,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: clamp(1em, 4vw, 3vw);
+    gap: clamp(2em, 4vw, 3vw);
 
     & a {
         text-decoration: none;
         color: var(--White);
         font-weight: 400;
         font-size: clamp(0.7rem, 2.5vw, 0.95rem);
+        letter-spacing: 0.2px;
     }
 }
 
@@ -127,7 +128,7 @@ nav {
     align-items: baseline;
     justify-content: left;
     height: 100%;
-    gap: clamp(3em, 5vw, 5vw);
+    gap: clamp(2.5em, 5vw, 5vw);
     padding: clamp(3em, 7vw, 6vw) clamp(2em, 5vw, 4vw);
     color: var(--White);
 
@@ -150,13 +151,13 @@ nav {
         width: 50%;
         letter-spacing: 0.5px;
         opacity: 0;
+        transform: translateY(20%);
 
         animation: elements_fade_in forwards cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms 1400ms;
     }
 }
 
-.text_containers,
-.loading_logo_div {
+.text_containers {
     height: max-content;
     width: max-content;
     overflow: hidden;
@@ -185,4 +186,44 @@ nav {
 
 .a {
     height: 150vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (width <= 900px) {
+    .right_nav {
+        & a {
+            display: none;
+        }
+    }
+
+    .heading_area {
+        & p {
+            width: 70%;
+        }
+    }
+}
+
+@media (width <= 500px) {
+    .heading_area,
+    .big_heads {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading_area p {
+        width: 90%;
+    }
 }
