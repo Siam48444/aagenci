@@ -256,8 +256,8 @@ nav {
     align-items: baseline;
     justify-content: space-around;
     height: max-content;
-    gap: clamp(5em, 25vw, 30vw);
     color: var(--White);
+    gap: clamp(5em, 30vw, 35vw);
 
     & > p {
         font-weight: 300;
@@ -328,6 +328,12 @@ nav {
     .page2_top {
         grid-template-columns: repeat(2, auto);
         padding: clamp(2.5em, 4vw, 3vw) clamp(4em, 6vw, 6vw);
+    }
+
+    .page2_bottom {
+        & > p {
+            display: none;
+        }
     }
 }
 
