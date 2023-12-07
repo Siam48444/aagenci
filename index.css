@@ -3,6 +3,10 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: var(--Inter);
+
+    &::selection {
+        background-color: var(--Black_Light);
+    }
 }
 
 body, html {
@@ -90,6 +94,7 @@ main {
     height: 100svh;
     background-color: var(--Black);
     overflow: hidden;
+    position: relative;
 }
 
 nav {
@@ -169,7 +174,7 @@ nav {
 
 .load_appear {
     transform: translateY(100%);
-
+    
     animation: elements_fade_in forwards cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms 1200ms;
 }
 
@@ -177,6 +182,34 @@ nav {
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+.main_image_div {
+    /* background-color: crimson; */
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.main_img {
+    width: 20em;
+    border-radius: 20px;
+    filter: brightness(0.8);
+    rotate: 15deg;
+    z-index: -99;
+
+    &:nth-child(1) {
+        transform: translateX(-20%);
     }
 }
 
