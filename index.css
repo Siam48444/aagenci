@@ -73,7 +73,7 @@ nav {
     align-items: baseline;
     justify-content: left;
     height: 100%;
-    gap: clamp(2em, 3vw, 4vw);
+    gap: clamp(3em, 5vw, 5vw);
     padding: clamp(3em, 7vw, 6vw) clamp(2em, 5vw, 4vw);
     color: var(--White);
 
@@ -91,7 +91,7 @@ nav {
 
     & p {
         font-weight: 300;
-        font-size: clamp(0.75rem, 3.5vw, 0.95rem);
+        font-size: clamp(0.75rem, 2vw, 0.95rem);
         line-height: 150%;
         width: 60%;
     }
