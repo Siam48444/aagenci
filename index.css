@@ -90,10 +90,11 @@ nav {
     }
 
     & p {
-        font-weight: 300;
+        font-weight: 200;
         font-size: clamp(0.75rem, 2vw, 0.95rem);
-        line-height: 150%;
-        width: 60%;
+        line-height: 140%;
+        width: 50%;
+        letter-spacing: 0.5px;
     }
 }
 
