@@ -185,33 +185,7 @@ nav {
     }
 }
 
-.main_image_div {
-    /* background-color: crimson; */
-    position: absolute;
-    right: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: max-content;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-}
 
-.main_img {
-    width: 20em;
-    border-radius: 20px;
-    filter: brightness(0.8);
-    rotate: 15deg;
-    z-index: -99;
-
-    &:nth-child(1) {
-        transform: translateX(-20%);
-    }
-}
 
 
 
