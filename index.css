@@ -54,13 +54,15 @@ html {
 .shutter_top {
    inset: 0 0 auto 0;
 
-   animation: shutter_top ease-in-out 400ms forwards 900ms;
+   animation: shutter_top ease-in-out 400ms forwards;
+   animation-delay: 900ms;
 }
 
 .shutter_bottom {
    inset: auto 0 0 0;
 
-   animation: shutter_bottom ease-in-out 400ms forwards 900ms;
+   animation: shutter_bottom ease-in-out 400ms forwards;
+   animation-delay: 900ms;
 }
 
 .loading_logo {
@@ -71,8 +73,8 @@ html {
    width: clamp(7em, 15vw, 15vw);
    z-index: 999;
 
-   animation: shutter_logo cubic-bezier(0.6, -0.28, 0.735, 0.045) 400ms forwards
-      400ms;
+   animation: shutter_logo cubic-bezier(0.6, -0.28, 0.735, 0.045) 400ms forwards;
+   animation-delay: 400ms;
 }
 
 @keyframes shutter_top {
@@ -111,7 +113,8 @@ nav {
    transform: translateY(-100%);
 
    animation: elements_fade_in forwards cubic-bezier(0.175, 0.885, 0.32, 1.275)
-      500ms 1000ms;
+      500ms;
+   animation-delay: 1000ms;
 }
 
 .right_nav {
@@ -174,7 +177,7 @@ nav {
 
    & h1 {
       font-weight: 700;
-      font-size: clamp(2.1rem, 10vw, 9.5vw);
+      font-size: clamp(2.4rem, 10vw, 9.5vw);
       line-height: 100%;
    }
 
@@ -188,7 +191,8 @@ nav {
       transform: translateY(20%);
 
       animation: elements_fade_in forwards
-         cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms 1400ms;
+         cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms;
+      animation-delay: 1400ms;
    }
 }
 
@@ -206,7 +210,8 @@ nav {
    transform: translateY(100%);
 
    animation: elements_fade_in forwards cubic-bezier(0.175, 0.885, 0.32, 1.275)
-      500ms 1200ms;
+      500ms;
+   animation-delay: 1200ms;
 }
 
 @keyframes elements_fade_in {
@@ -336,7 +341,6 @@ nav {
    width: max-content;
    height: max-content;
    gap: 0.8em;
-   /* background-color: crimson; */
 
    & p {
       color: var(--White);
@@ -354,7 +358,7 @@ nav {
    fill: var(--Green);
    height: 1.5em;
    width: 1.5em;
-   transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   transition: transform 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .a {
