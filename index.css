@@ -304,6 +304,17 @@ nav {
     border-radius: 2.2vw;
     filter: brightness(0.85);
     rotate: 20deg;
+
+    animation: main_images_animation linear 5000ms infinite;
+}
+
+@keyframes main_images_animation {
+    50% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .main_disk_image {
