@@ -370,6 +370,39 @@ nav {
    background-size: cover;
 }
 
+#page4 {
+   padding: clamp(3em, 7vw, 6vw) clamp(2em, 5vw, 5vw);
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   overflow: hidden;
+   width: 100%;
+   gap: 2em;
+   color: var(--White);
+
+   & h6 {
+      font-weight: 400;
+      font-size: clamp(0.75rem, 6vw, 1.2vw);
+      letter-spacing: 2px;
+   }
+
+   & h1 {
+      font-weight: 600;
+      font-size: clamp(2.8rem, 8vw, 8vw);
+   }
+
+   & p {
+      font-weight: 200;
+      font-size: clamp(0.75rem, 6vw, 1.2vw);
+   }
+}
+
+.services_section_left {
+   display: flex;
+   flex-direction: column;
+   align-items: baseline;
+   justify-content: space-between;
+}
+
 .a {
    /* nglarlguibalirugbairugbouawsgbubwgsuilbawiupwrugwprg */
    height: 150vh;
