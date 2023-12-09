@@ -92,8 +92,7 @@ body, html {
 
 main {
     display: block;
-    height: 100vh;
-    height: 100svh;
+    height: max-content;
     overflow: hidden;
     position: relative;
 }
@@ -290,6 +289,23 @@ nav {
     }
 }
 
+.main_disk_image,
+.main_box_image {
+    position: absolute;
+    right: 5%;
+    width: clamp(13em, 40vw, 28vw);
+    border-radius: 2vw;
+    filter: brightness(0.85);
+    rotate: 20deg;
+}
+
+.main_disk_image {
+    top: 25%;
+}
+
+.main_box_image {
+    bottom: 20%;
+}
 
 
 .a {
