@@ -18,6 +18,7 @@ body, html {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    background-color: var(--Black);
 }
 
 #wrapper {
@@ -32,7 +33,7 @@ body, html {
     --Black: rgba(0, 0, 0, 1);
     --Black_Light: rgba(35, 35, 35, 1);
     --White: rgba(255, 255, 255, 1);
-    --Green: rgba(215, 235, 110, 1);
+    --Green: rgba(212, 235, 98, 1);
     
     /* Font Families */
     --Inter: 'Inter', sans-serif;
@@ -93,7 +94,6 @@ main {
     display: block;
     height: 100vh;
     height: 100svh;
-    background-color: var(--Black);
     overflow: hidden;
     position: relative;
 }
@@ -169,7 +169,7 @@ nav {
 
     & h1 {
         font-weight: 700;
-        font-size: clamp(2rem, 9vw, 9vw);
+        font-size: clamp(2rem, 10vw, 10vw);
         line-height: 100%;
     }
 
@@ -210,7 +210,6 @@ nav {
 }
 
 #page2 {
-    background-color: var(--Black);
     width: 100%;
     height: max-content;
     display: flex;
@@ -227,7 +226,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, auto);
     width: 100%;
-    padding: clamp(1.5em, 4vw, 3vw) clamp(3em, 6vw, 6vw);
+    padding: clamp(1.5em, 4vw, 3vw) clamp(2em, 6vw, 6vw);
     border-radius: 2vw;
     gap: clamp(1em, 5vw, 6vw);
 
@@ -254,14 +253,14 @@ nav {
 .page2_bottom {
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
     height: max-content;
     color: var(--White);
-    gap: clamp(5em, 30vw, 35vw);
+    gap: clamp(10em, 36vw, 36vw);
 
     & > p {
-        font-weight: 300;
-        font-size: clamp(0.8rem, 3vw, 1rem);
+        font-weight: 200;
+        font-size: clamp(0.95rem, 3vw, 1.1rem);
     }
 }
 
@@ -281,12 +280,12 @@ nav {
 
     & h1 {
         font-weight: 600;
-        font-size: clamp(2.5rem, 5vw, 5vw);
+        font-size: clamp(2.6rem, 5.5vw, 5.5vw);
         line-height: 100%;
     }
 
     & h6 {
-        font-weight: 300;
+        font-weight: 200;
         font-size: clamp(0.75rem, 2vw, 0.95rem);
     }
 }
@@ -333,6 +332,10 @@ nav {
     .page2_bottom {
         & > p {
             display: none;
+        }
+
+        & h6 {
+            width: 60%;
         }
     }
 }
