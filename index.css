@@ -387,7 +387,7 @@ nav {
 
    & h1 {
       font-weight: 600;
-      font-size: clamp(2.8rem, 8vw, 8vw);
+      font-size: clamp(3rem, 8vw, 8vw);
    }
 
    & p,
@@ -428,7 +428,7 @@ nav {
    background-color: var(--Black_Light);
    color: var(--White);
    gap: 1em;
-   padding: clamp(1.5em, 4vw, 3vw);
+   padding: clamp(1.3em, 3vw, 2.8vw);
    border-radius: 2.5vw;
 }
 
@@ -496,6 +496,21 @@ nav {
       & h6 {
          width: 60%;
       }
+   }
+
+   #page4 {
+      grid-template-columns: repeat(1, auto);
+      align-items: center;
+      justify-content: center;
+   }
+
+   .services_section_left {
+      align-items: center;
+      text-align: center;
+   }
+
+   .services_svg_containers {
+      transform: scale(0.9);
    }
 }
 
