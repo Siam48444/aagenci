@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -10,7 +12,8 @@
     }
 }
 
-body, html {
+body,
+html {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -34,9 +37,9 @@ body, html {
     --Black_Light: rgba(35, 35, 35, 1);
     --White: rgba(255, 255, 255, 1);
     --Green: rgba(212, 235, 98, 1);
-    
+
     /* Font Families */
-    --Inter: 'Inter', sans-serif;
+    --Inter: "Inter", sans-serif;
 }
 
 .loading_shutter {
@@ -67,8 +70,9 @@ body, html {
     transform: translate(-50%, -50%) scale(1);
     width: clamp(7em, 15vw, 15vw);
     z-index: 999;
-    
-    animation: shutter_logo cubic-bezier(0.6, -0.28, 0.735, 0.045) 400ms forwards 400ms;
+
+    animation: shutter_logo cubic-bezier(0.6, -0.28, 0.735, 0.045) 400ms
+        forwards 400ms;
 }
 
 @keyframes shutter_top {
@@ -105,8 +109,9 @@ nav {
     padding: clamp(2em, 5vw, 4vw) clamp(3em, 8vw, 9vw);
     user-select: none;
     transform: translateY(-100%);
-    
-    animation: elements_fade_in forwards cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms 1000ms;
+
+    animation: elements_fade_in forwards cubic-bezier(0.175, 0.885, 0.32, 1.275)
+        500ms 1000ms;
 }
 
 .right_nav {
@@ -139,7 +144,7 @@ nav {
             transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms;
             transition-property: width;
         }
-        
+
         &:hover::after {
             left: 0;
             width: 100%;
@@ -182,7 +187,8 @@ nav {
         opacity: 0;
         transform: translateY(20%);
 
-        animation: elements_fade_in forwards cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms 1400ms;
+        animation: elements_fade_in forwards
+            cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms 1400ms;
     }
 }
 
@@ -198,8 +204,9 @@ nav {
 
 .load_appear {
     transform: translateY(100%);
-    
-    animation: elements_fade_in forwards cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms 1200ms;
+
+    animation: elements_fade_in forwards cubic-bezier(0.175, 0.885, 0.32, 1.275)
+        500ms 1200ms;
 }
 
 @keyframes elements_fade_in {
@@ -294,50 +301,38 @@ nav {
 .main_box_image {
     position: absolute;
     right: 5%;
-    width: clamp(13em, 40vw, 28vw);
+    width: 23em;
     border-radius: 2vw;
     filter: brightness(0.85);
     rotate: 20deg;
 }
 
 .main_disk_image {
-    bottom: 45%;
+    bottom: 40%;
 }
 
 .main_box_image {
-    bottom: 25%;
+    bottom: 20%;
 }
-
 
 .a {
     height: 150vh;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media (width <= 950px) {
+@media (width <= 1000px) {
     .main_box_image,
     .main_disk_image {
         bottom: 10%;
+        width: 20em;
         filter: brightness(0.75);
     }
 
     .main_disk_image {
-        left: 20%;
+        left: 15%;
     }
 
     .main_box_image {
-        right: 20%;
+        right: 15%;
     }
 }
 
@@ -372,6 +367,13 @@ nav {
     }
 }
 
+@media (width <= 600px) {
+    .main_box_image,
+    .main_disk_image {
+        width: 16em;
+    }
+}
+
 @media (width <= 500px) {
     .heading_area,
     .big_heads {
@@ -383,6 +385,15 @@ nav {
     .heading_area p {
         width: 90%;
         text-align: center;
+    }
+
+    .main_box_image,
+    .main_disk_image {
+        width: 14em;
+    }
+
+    .main_disk_image {
+        top: 55%;
     }
 
     .page2_top {
