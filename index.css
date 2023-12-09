@@ -92,7 +92,8 @@ body, html {
 
 main {
     display: block;
-    height: max-content;
+    height: 100vh;
+    height: 100svh;
     overflow: hidden;
     position: relative;
 }
@@ -300,11 +301,11 @@ nav {
 }
 
 .main_disk_image {
-    top: 25%;
+    bottom: 45%;
 }
 
 .main_box_image {
-    bottom: 20%;
+    bottom: 25%;
 }
 
 
@@ -324,6 +325,21 @@ nav {
 
 
 
+@media (width <= 950px) {
+    .main_box_image,
+    .main_disk_image {
+        bottom: 10%;
+        filter: brightness(0.75);
+    }
+
+    .main_disk_image {
+        left: 20%;
+    }
+
+    .main_box_image {
+        right: 20%;
+    }
+}
 
 @media (width <= 900px) {
     .right_nav {
