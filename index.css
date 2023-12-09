@@ -344,12 +344,17 @@ nav {
       font-size: clamp(0.75rem, 6vw, 1.2vw);
       letter-spacing: 2px;
    }
+
+   &:hover .right_arrow_svg {
+      transform: translateX(50%) rotate(180deg);
+   }
 }
 
 .right_arrow_svg {
    fill: var(--Green);
    height: 1.5em;
    width: 1.5em;
+   transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .a {
@@ -455,5 +460,9 @@ nav {
       & h6 {
          width: 80%;
       }
+   }
+
+   .link_buttons:hover .right_arrow_svg {
+      transform: translateX(0) rotate(0);
    }
 }
