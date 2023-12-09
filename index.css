@@ -403,6 +403,20 @@ nav {
    justify-content: space-between;
 }
 
+.services_section_right {
+   gap: 1em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+/* 
+.services_svg_containers {
+   width: 3em;
+   height: 3em;
+} */
+
 .a {
    /* nglarlguibalirugbairugbouawsgbubwgsuilbawiupwrugwprg */
    height: 150vh;
