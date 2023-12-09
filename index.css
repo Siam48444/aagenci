@@ -177,7 +177,7 @@ nav {
 
    & h1 {
       font-weight: 700;
-      font-size: clamp(2.4rem, 10vw, 9.5vw);
+      font-size: clamp(2.45rem, 10vw, 9vw);
       line-height: 100%;
    }
 
@@ -371,7 +371,6 @@ nav {
    .main_disk_image {
       bottom: 10%;
       width: 20em;
-      filter: brightness(0.7);
    }
 
    .main_disk_image {
