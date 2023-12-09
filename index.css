@@ -299,6 +299,7 @@ nav {
 
 .main_disk_image,
 .main_box_image {
+    user-select: none;
     position: absolute;
     width: 23em;
     border-radius: 2.2vw;
