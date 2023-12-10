@@ -46,3 +46,17 @@ function Page3ImageScrollAnimation() {
    });
 }
 Page3ImageScrollAnimation();
+
+function Page3FadeOutAnimation() {
+   gsap.to("#page3", {
+      opacity: 0,
+      scrollTrigger: {
+         scroller: "#wrapper",
+         trigger: "#page3",
+         scrub: true,
+         start: "top 0%",
+         end: "bottom 0%",
+      },
+   });
+}
+Page3FadeOutAnimation();
