@@ -21,7 +21,7 @@ ScrollTrigger.scrollerProxy("#wrapper", {
    pinType: document.querySelector("#wrapper").style.transform ? "transform" : "fixed",
 });
 
-function Page2ScrollAnimation() {
+function Page2TopSectionAppearingAnimation() {
    gsap.from(".page2_top", {
       opacity: 0,
       duration: 0.5,
@@ -29,11 +29,13 @@ function Page2ScrollAnimation() {
       scrollTrigger: {
          scroller: "#wrapper",
          trigger: ".page2_top",
-         start: "top 70%",
+         start: "top 90%",
+         end: "bottom 60%",
+         scrub: true,
       },
    });
 }
-Page2ScrollAnimation();
+Page2TopSectionAppearingAnimation();
 
 function Page3ImageScrollAnimation() {
    gsap.to(".page3_phone_image", {
