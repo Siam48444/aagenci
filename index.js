@@ -24,18 +24,32 @@ ScrollTrigger.scrollerProxy("#wrapper", {
 function Page2TopSectionAppearingAnimation() {
    gsap.from(".page2_top", {
       opacity: 0,
-      duration: 0.5,
       x: -100,
       scrollTrigger: {
          scroller: "#wrapper",
          trigger: ".page2_top",
          start: "top 90%",
-         end: "bottom 60%",
+         end: "bottom 80%",
          scrub: true,
       },
    });
 }
 Page2TopSectionAppearingAnimation();
+
+function Page2BottomSectionAppearingAnimation() {
+   gsap.from(".page2_bottom", {
+      opacity: 0,
+      x: 100,
+      scrollTrigger: {
+         scroller: "#wrapper",
+         trigger: ".page2_bottom",
+         scrub: true,
+         start: "top 90%",
+         end: "bottom 80%",
+      },
+   });
+}
+Page2BottomSectionAppearingAnimation();
 
 function Page3ImageScrollAnimation() {
    gsap.to(".page3_phone_image", {
