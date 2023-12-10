@@ -387,7 +387,7 @@ nav {
 
    & h1 {
       font-weight: 600;
-      font-size: clamp(3rem, 8vw, 8vw);
+      font-size: clamp(3.3rem, 8vw, 8vw);
    }
 
    & p,
@@ -422,9 +422,10 @@ nav {
 .services_boxes {
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-evenly;
    text-decoration: none;
    height: max-content;
+   width: 100%;
    background-color: var(--Black_Light);
    color: var(--White);
    gap: 1em;
