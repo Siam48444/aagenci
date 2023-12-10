@@ -34,3 +34,15 @@ function Page2ScrollAnimation() {
    });
 }
 Page2ScrollAnimation();
+
+function Page3ImageScrollAnimation() {
+   gsap.to(".page3_phone_image", {
+      scale: 1.5,
+      scrollTrigger: {
+         scroller: "#wrapper",
+         trigger: "#page3",
+         scrub: true,
+      },
+   });
+}
+Page3ImageScrollAnimation();
