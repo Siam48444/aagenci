@@ -21,14 +21,16 @@ ScrollTrigger.scrollerProxy("#wrapper", {
    pinType: document.querySelector("#wrapper").style.transform ? "transform" : "fixed",
 });
 
-// Page2 top scroll animation.
-gsap.from(".page2_top", {
-   scrollTrigger: {
-      trigger: ".page2_top",
-      scroller: "#wrapper",
-      start: "top 70%",
-   },
-   opacity: 0,
-   duration: 0.5,
-   x: -100,
-});
+function Page2ScrollAnimation() {
+   gsap.from(".page2_top", {
+      opacity: 0,
+      duration: 0.5,
+      x: -100,
+      scrollTrigger: {
+         scroller: "#wrapper",
+         trigger: ".page2_top",
+         start: "top 70%",
+      },
+   });
+}
+Page2ScrollAnimation();
