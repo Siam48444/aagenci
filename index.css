@@ -176,7 +176,7 @@ nav {
 
    & h1 {
       font-weight: 700;
-      font-size: clamp(2.45rem, 10vw, 9vw);
+      font-size: clamp(2.55rem, 10vw, 9vw);
       line-height: 100%;
    }
 
