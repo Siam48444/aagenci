@@ -20,3 +20,15 @@ ScrollTrigger.scrollerProxy("#wrapper", {
    // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
    pinType: document.querySelector("#wrapper").style.transform ? "transform" : "fixed",
 });
+
+// Page2 top scroll animation.
+gsap.from(".page2_top", {
+   scrollTrigger: {
+      trigger: ".page2_top",
+      scroller: "#wrapper",
+      start: "top 70%",
+   },
+   opacity: 0,
+   duration: 0.5,
+   x: -100,
+});
