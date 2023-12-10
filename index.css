@@ -468,6 +468,38 @@ nav {
    gap: 1em;
 }
 
+#page5 {
+   width: 100%;
+   position: relative;
+   height: max-content;
+   padding-block: clamp(3em, 5vw, 6vw);
+   overflow: hidden;
+   color: var(--White);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.projects_slide {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   animation: projects_slide linear infinite 5000ms;
+
+   & h2 {
+      text-transform: uppercase;
+      font-size: 10rem;
+      font-weight: 600;
+   }
+}
+
+@keyframes projects_slide {
+   100% {
+      transform: translateX(-50%);
+   }
+}
+
 .a {
    /* nglarlguibalirugbairugbouawsgbubwgsuilbawiupwrugwprg */
    height: 150vh;
