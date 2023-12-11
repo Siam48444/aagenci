@@ -178,6 +178,24 @@ nav {
    width: clamp(5em, 10vw, 8vw);
 }
 
+.hamburger_button {
+   display: none;
+   height: max-content;
+   width: max-content;
+   gap: 0.3em;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   overflow: visible;
+
+   & span {
+      background-color: var(--Green);
+      width: 1.8em;
+      height: 0.12em;
+      border-radius: 9em;
+   }
+}
+
 .heading_area {
    display: flex;
    flex-direction: column;
@@ -550,6 +568,10 @@ nav {
       & a {
          display: none;
       }
+   }
+
+   .hamburger_button {
+      display: flex;
    }
 
    .heading_area {
