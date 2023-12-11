@@ -187,6 +187,8 @@ nav {
    align-items: center;
    justify-content: space-between;
    overflow: visible;
+   cursor: pointer;
+   padding: 0.15em;
 
    & span {
       background-color: var(--Green);
