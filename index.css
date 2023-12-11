@@ -188,7 +188,6 @@ nav {
    justify-content: space-between;
    overflow: visible;
    cursor: pointer;
-   z-index: 99;
 
    & span {
       background-color: var(--Green);
@@ -202,9 +201,10 @@ nav {
    position: fixed;
    inset: 0;
    background-color: var(--Black);
-   z-index: 999;
+   z-index: 99;
    display: flex;
    flex-direction: column;
+   overflow: hidden;
    align-items: center;
    justify-content: space-evenly;
    padding-block: 3em;
@@ -219,6 +219,21 @@ nav {
 
       &:hover {
          color: var(--Green);
+      }
+   }
+
+   .hamburger_button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: clamp(2em, 5vw, 4vw) clamp(3em, 8vw, 9vw);
+
+      & span:nth-child(1) {
+         transform: translateY(0.21em) rotate(45deg);
+      }
+
+      & span:nth-child(2) {
+         transform: translateY(-0.21em) rotate(-45deg);
       }
    }
 }
