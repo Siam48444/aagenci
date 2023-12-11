@@ -68,7 +68,7 @@ html {
    width: 100%;
    pointer-events: all;
    background-color: var(--Black_Light);
-   z-index: 999;
+   z-index: 99999;
 }
 
 .shutter_top {
@@ -188,13 +188,32 @@ nav {
    justify-content: space-between;
    overflow: visible;
    cursor: pointer;
-   padding: 0.15em;
+   z-index: 99;
 
    & span {
       background-color: var(--Green);
       width: 1.8em;
       height: 0.12em;
       border-radius: 9em;
+   }
+}
+
+.menu_section {
+   position: fixed;
+   inset: 0;
+   background-color: var(--Black);
+   z-index: 999;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   padding-block: 3em;
+
+   & a {
+      color: var(--White);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: clamp(2.45rem, 10vw, 9vw);
    }
 }
 
