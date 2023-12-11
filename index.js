@@ -10,3 +10,17 @@ function LenisSmoothScroll() {
    gsap.ticker.lagSmoothing(0);
 }
 LenisSmoothScroll();
+
+// Menu section clickings.
+var Menu = document.querySelector(".menu_section");
+const HamburgerNorm = document.querySelector(".hamburger_normal");
+HamburgerNorm.addEventListener("click", () => {
+   Menu.style.transform = "translateY(0)";
+   Menu.style.pointerEvents = "all";
+});
+
+const HamburgerCross = document.querySelector(".hamburger_cross");
+HamburgerCross.addEventListener("click", () => {
+   Menu.style.transform = "translateY(-100%)";
+   Menu.style.pointerEvents = "none";
+});
