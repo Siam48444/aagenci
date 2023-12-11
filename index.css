@@ -202,12 +202,15 @@ nav {
    inset: 0;
    background-color: var(--Black);
    z-index: 99;
-   display: flex;
+   display: none;
    flex-direction: column;
    overflow: hidden;
    align-items: center;
    justify-content: space-evenly;
-   padding-block: 3em;
+   padding-block: 5em;
+   transform: translateY(-100%);
+   pointer-events: none;
+   transition: transform 400ms ease-in-out;
 
    & a {
       color: var(--White);
@@ -613,6 +616,10 @@ nav {
    }
 
    .hamburger_button {
+      display: flex;
+   }
+
+   .menu_section {
       display: flex;
    }
 
