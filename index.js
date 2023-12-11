@@ -25,7 +25,7 @@ HamburgerCross.addEventListener("click", () => {
 
 // GSAP scrollTrigger animations.
 gsap.from(".page2_top", {
-   xPercent: -50,
+   xPercent: -30,
    opacity: 0,
    scrollTrigger: {
       scroller: window,
