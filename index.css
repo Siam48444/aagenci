@@ -71,7 +71,7 @@ html {
    top: 50%;
    transform: translate(-50%, -50%) scale(1);
    width: clamp(7em, 15vw, 15vw);
-   z-index: 999;
+   z-index: 99999;
 
    animation: shutter_logo cubic-bezier(0.6, -0.28, 0.735, 0.045) 400ms forwards;
    animation-delay: 400ms;
